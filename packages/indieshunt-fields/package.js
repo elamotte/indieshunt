@@ -53,7 +53,8 @@ Package.onUse(function (api) {
   // client
 
   api.add_files([
-
+      'lib/client/templates/posts/modules/post_short_description.html',
+      'lib/client/templates/posts/modules/post_short_description.js'
   ], ['client']);
 
   // server
