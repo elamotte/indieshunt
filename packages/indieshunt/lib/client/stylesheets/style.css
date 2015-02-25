@@ -1,0 +1,15 @@
+.post-thumbnail-link{
+    width:150px;
+}
+.post-category{
+    margin-top:5px;
+}
+.post-meta-item{
+    font-size:1.1em;
+}
+.post-title{
+    font-size:20px;
+}
+.post-rank{
+    display:none;
+}

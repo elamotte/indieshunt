@@ -1,7 +1,7 @@
 Package.describe({
-  summary: 'Indieshunt – indieshunt layer over Telescope',
+  summary: 'Indieshunt field – add fields specitics to indieshunt',
   version: '0.1.0',
-  name: 'indieshunt'
+  name: 'indieshunt-fields'
 });
 
 Npm.depends({
@@ -53,7 +53,6 @@ Package.onUse(function (api) {
   // client
 
   api.add_files([
-      'lib/client/stylesheets/style.css',
       'lib/client/templates/posts/modules/post_short_description.html',
       'lib/client/templates/posts/modules/post_short_description.js',
       'lib/client/templates/posts/modules/ih_post_edit.html',

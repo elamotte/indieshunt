@@ -15,10 +15,6 @@ var shortDescription = {
 }
 addToPostSchema.push(shortDescription);
 
-// postHeading.push({
-//   template: 'postShortDescription',
-//   order: 30
-// });
 
 postMeta = [
  {
