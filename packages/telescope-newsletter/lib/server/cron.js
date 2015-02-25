@@ -27,10 +27,10 @@ var getSchedule = function (parser) {
 
     case 7: // Once a week (Mondays)
       // sched = {schedules: [{dw: [2]}]};
-      schedule = recur.on(2).dayOfWeek();
+      schedule = recur.on(6).dayOfWeek();
 
     default: // Once a week (Mondays)
-      schedule = recur.on(2).dayOfWeek();
+      schedule = recur.on(6).dayOfWeek();
   }
   return schedule.on(getSetting('newsletterTime', defaultTime)).time();
 }

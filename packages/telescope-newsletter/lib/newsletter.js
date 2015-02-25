@@ -133,7 +133,7 @@ var newsletterFrequency = {
         },
         {
           value: 7,
-          label: 'Once a week (Mondays)'
+          label: 'Once a week (Fridays)'
         }
       ]
     }
