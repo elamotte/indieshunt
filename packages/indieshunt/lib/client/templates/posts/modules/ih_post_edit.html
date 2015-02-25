@@ -1,0 +1,5 @@
+<template name="ihPostEdit">
+{{#if canEdit this}}
+  | <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link goto-edit">{{_ "edit"}}</a>
+{{/if}}
+</template>

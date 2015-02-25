@@ -1,7 +1,7 @@
 Package.describe({
-  summary: 'Indieshunt field – add fields specitics to indieshunt',
+  summary: 'Indieshunt – indieshunt layer over Telescope',
   version: '0.1.0',
-  name: 'indieshunt-fields'
+  name: 'indieshunt'
 });
 
 Npm.depends({
@@ -54,7 +54,10 @@ Package.onUse(function (api) {
 
   api.add_files([
       'lib/client/templates/posts/modules/post_short_description.html',
-      'lib/client/templates/posts/modules/post_short_description.js'
+      'lib/client/templates/posts/modules/post_short_description.js',
+      'lib/client/templates/posts/modules/ih_post_edit.html',
+      'lib/client/templates/posts/modules/ih_post_categories.html',
+      'lib/client/templates/posts/modules/ih_post_categories.js'
   ], ['client']);
 
   // server
@@ -72,7 +75,9 @@ Package.onUse(function (api) {
   // -------------------------------- 3. Variables to export --------------------------------
 
   api.export([
-    'myFunction'
+    'myFunction',
+    'postMeta',
+    'postHeading'
   ]);
 
 });
