@@ -1,0 +1,11 @@
+<template name="ih_post_item">
+  <a href="/posts/{{_id}}">
+  <div class="post {{#if sticky}}sticky{{/if}} {{inactiveClass}} {{postClass}}" id="{{_id}}">
+      {{#each postModules}}
+        <div class="{{moduleClass}}">
+          {{> UI.dynamic template=getTemplate data=..}}
+        </div>
+      {{/each}}
+  </div>
+  </a>
+</template>

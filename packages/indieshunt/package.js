@@ -56,6 +56,7 @@ Package.onUse(function (api) {
 
   api.add_files([
       'lib/client/stylesheets/style.css',
+      'lib/client/templates/posts/ih_post_item.html',
       'lib/client/templates/posts/modules/post_short_description.html',
       'lib/client/templates/posts/modules/post_short_description.js',
       'lib/client/templates/posts/modules/ih_post_edit.html',

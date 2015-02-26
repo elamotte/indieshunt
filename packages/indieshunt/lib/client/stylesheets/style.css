@@ -8,6 +8,7 @@
 }
 .post-category:hover{
     color:white !important;
+    background-color:#fa5c4f;
  }
 
 .post-meta-item{
@@ -30,4 +31,23 @@
 .action-count{
     top:0px;
     font-size:12px;
+}
+
+
+.post:hover{
+    background-color:#fcf5e0;
+}
+.post-title:hover{
+    color:#fa5c4f !important;
+    border-bottom: 2px solid #fa5c4f;
+}
+.discuss-link:hover{
+    color:#fa5c4f;
+}
+.post-title{
+    font-weight:600!important;
+}
+.post-meta-item{
+    color:#aaa;
+    font-weight:400;
 }
