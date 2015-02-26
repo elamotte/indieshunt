@@ -60,6 +60,7 @@ Package.onUse(function (api) {
       'lib/client/templates/posts/modules/post_short_description.js',
       'lib/client/templates/posts/modules/ih_post_edit.html',
       'lib/client/templates/posts/modules/ih_post_categories.html',
+      'lib/client/templates/posts/modules/ih_post_discuss.html',
       'lib/client/templates/nav/ih_submit_button.html',
       'lib/client/templates/nav/ih_notifications_menu.html',
       'lib/client/templates/nav/ih_notifications_menu.js'
