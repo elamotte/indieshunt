@@ -1,2 +1,2 @@
 templates["submitButton"] = "ihSubmitButton";
-templates["notificationMenu"] = "ihNotificationsMenu";
+templates["notificationsMenu"] = "ihNotificationsMenu";

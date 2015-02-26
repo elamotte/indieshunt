@@ -1,4 +1,4 @@
-Template[getTemplate('notificationsMenu')].helpers({
+Template[getTemplate('ihNotificationsMenu')].helpers({
   notificationItem: function () {
     return getTemplate('notificationItem');
   },
