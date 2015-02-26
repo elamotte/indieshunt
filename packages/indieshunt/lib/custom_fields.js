@@ -14,27 +14,3 @@ var shortDescription = {
   }
 }
 addToPostSchema.push(shortDescription);
-
-
-postMeta = [
- {
-     template: 'postShortDescription',
-     order: 0
- },
- {
-    template: 'ihPostEdit',
-    order: 10
- },
- {
-     template: 'ihPostCategories',
-     order: 20
- }
-];
-
-
-postHeading = [
-  {
-     template: 'postTitle',
-     order: 0
- }
-];

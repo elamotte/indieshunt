@@ -48,6 +48,8 @@ Package.onUse(function (api) {
 
   api.add_files([
     'lib/custom_fields.js',
+    'lib/template_replace.js',
+    'lib/array_replace.js'
   ], ['client', 'server']);
 
   // client
@@ -58,7 +60,10 @@ Package.onUse(function (api) {
       'lib/client/templates/posts/modules/post_short_description.js',
       'lib/client/templates/posts/modules/ih_post_edit.html',
       'lib/client/templates/posts/modules/ih_post_categories.html',
-      'lib/client/templates/posts/modules/ih_post_categories.js'
+      'lib/client/templates/posts/modules/ih_post_categories.js',
+      'lib/client/templates/nav/ih_submit_button.html',
+      'lib/client/templates/nav/ih_notifications_menu.html',
+      'lib/client/templates/nav/ih_notifications_menu.js'
   ], ['client']);
 
   // server
@@ -77,6 +82,7 @@ Package.onUse(function (api) {
 
   api.export([
     'myFunction',
+    'primaryNav',
     'postMeta',
     'postHeading'
   ]);
