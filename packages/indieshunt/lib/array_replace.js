@@ -24,7 +24,7 @@ postMeta = [
     order: 10
  },
  {
-     template: 'ihPostCategories',
+     template: 'postCategories',
      order: 20
  }
 ];

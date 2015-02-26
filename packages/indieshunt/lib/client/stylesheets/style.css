@@ -2,9 +2,14 @@
 .post-thumbnail-link{
     width:150px;
 }
+
 .post-category{
     margin-top:5px;
 }
+.post-category:hover{
+    color:white !important;
+ }
+
 .post-meta-item{
     font-size:1.1em;
 }
