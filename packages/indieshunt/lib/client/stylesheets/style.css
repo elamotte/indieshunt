@@ -48,6 +48,10 @@
     font-weight:600!important;
 }
 .post-meta-item{
-    color:#aaa;
+    color:#999;
     font-weight:400;
+}
+.helper-text{
+    font-size: 0.8em;
+    color: #999 !important;
 }

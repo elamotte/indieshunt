@@ -1,0 +1,11 @@
+<template name="ih_post_submit">
+
+  <h2>Post an Indie Game</h2>
+
+  <div class="grid grid-module">
+    {{#autoForm collection="Posts" id="submitPostForm" type="method" meteormethod="submitPost"}}
+      {{> ih_post_submit_form}}
+    {{/autoForm}}
+  </div>
+
+</template>

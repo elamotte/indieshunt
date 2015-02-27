@@ -1,0 +1,9 @@
+<template name="ih_post_edit">
+  <h2>Edit Post</h2>
+
+  <div class="grid grid-module">
+    {{#autoForm collection="Posts" doc=post id="editPostForm" type="method" meteormethod="editPost"}}
+      {{> ih_post_submit_form}}
+    {{/autoForm}}
+  </div>
+</template>
