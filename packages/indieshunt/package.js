@@ -19,7 +19,9 @@ Package.onUse(function (api) {
     'telescope-base',             // basic Telescope hooks and objects
     'telescope-lib',              // useful functions
     'telescope-i18n',             // internationalization wrapper
-    'fourseven:scss'              // SCSS compilation package
+    'aldeed:autoform',
+    'aldeed:simple-schema',
+    'fourseven:scss'             // SCSS compilation package
   ]);
 
   // client

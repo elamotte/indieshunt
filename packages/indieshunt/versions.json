@@ -1,6 +1,14 @@
 {
   "dependencies": [
     [
+      "aldeed:autoform",
+      "4.2.0"
+    ],
+    [
+      "aldeed:simple-schema",
+      "1.2.0"
+    ],
+    [
       "application-configuration",
       "1.0.3"
     ],
