@@ -6,29 +6,20 @@
     <img class="post-thumbnail" src="{{thumbnailUrl}}"/>&nbsp;
   {{/if}}
 
-  <a href="{{postLink}}" target="_blank">{{title}}</a>
+  <a href="{{postPageLink}}" target="_blank">{{title}}</a> - <a class="post-domain post-meta" href="{{postLink}}">{{domain}}</a>
 </span>
 
-<div class="post-meta">
-  {{#if domain}}
-    <a class="post-domain" href="">{{domain}}</a>
-    | 
-  {{/if}}
-  <span class="post-submitted">Submitted by <a href="{{profileUrl}}" class="comment-link" target="_blank">{{authorName}}</a></span>
-  <span class="post-date">on {{date}}</span>
+
+{{#if postTagline}}
+  <div style='margin-top:10px' class="post-body-excerpt">
+    {{{postTagline}}}
+  </div>
+{{/if}}
+
+<div style='margin-bottom:20px' class="post-meta">
+  <span class="post-submitted">By <a href="{{profileUrl}}" class="comment-link" target="_blank">{{authorName}}</a></span>
   |
   <a href="{{postPageLink}}" class="comment-link" target="_blank">{{commentCount}} Comments</a>
 </div>
 
-
-{{#if body}}
-  <div class="post-body-excerpt">
-    {{{htmlBody}}}
-    <a href="{{postPageLink}}" class="comment-link" target="_blank">Read more</a>
-  </div>
-{{/if}}
-
-
-<br>
 </div>
-

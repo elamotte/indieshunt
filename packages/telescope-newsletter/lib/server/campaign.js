@@ -7,7 +7,7 @@ getCampaignPosts = function (postsCount) {
 
   // look for last scheduled campaign in the database
   var lastCampaign = SyncedCron._collection.findOne({name: 'Schedule newsletter'}, {sort: {finishedAt: -1}, limit: 1});
-  
+
   // if there is a last campaign use its date, else default to posts from the last 7 days
   var lastWeek = moment().subtract(7, 'days').toDate();
   var after = (typeof lastCampaign != 'undefined') ? lastCampaign.finishedAt : lastWeek
@@ -35,6 +35,7 @@ buildCampaign = function (postsArray) {
     // the naked post object as stored in the database is missing a few properties, so let's add them
     var properties = _.extend(post, {
       authorName: getAuthorName(post),
+      postTagline: post.shortDescription,
       postLink: getPostLink(post),
       profileUrl: getProfileUrl(postUser),
       postPageLink: getPostPageUrl(post),
@@ -42,8 +43,8 @@ buildCampaign = function (postsArray) {
     });
 
     if (post.body)
-      properties.body = marked(trimWords(post.body, 20)).replace('<p>', '').replace('</p>', ''); // remove p tags
-    
+      properties.body = post.shortDescription; // remove p tags
+
     if(post.url)
       properties.domain = getDomain(post.url)
 
