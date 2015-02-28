@@ -1,9 +1,9 @@
 <template name="ih_post_submit_form">
 
 <div class="control-group">
-  <label class="control-label">URL</label>
+  <label class="control-label">URL<br><span class="helper-text">Video preview supported</span></label>
   <div class="controls">
-    {{> afFieldInput name='url'}}
+    {{> afFieldInput name='url' placeholder='URL of the game\'s website or video trailer' }}
   </div>
 </div>
 
@@ -15,7 +15,7 @@
   </div>
 
   <div class="control-group">
-    <label class="control-label">Tagline</label>
+    <label class="control-label">Tagline<br><span class="helper-text">70 characters max</span></label>
     <div class="controls">
       {{> afFieldInput name='shortDescription' placeholder='A short tagline that pitch the game'}}
     </div>
@@ -24,7 +24,7 @@
   <div class="control-group">
     <label class="control-label">Description<br><span class="helper-text"><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown</a> supported</span></label>
     <div class="controls" id="editor">
-      {{> afFieldInput name='body' rows=6 class='input-xlarge'}}
+      {{> afFieldInput name='body' placeholder='Description, Critic, Developement State, etc. This is your space, if you are the Game Dev precise it here.' rows=6 class='input-xlarge'}}
     </div>
   </div>
 
