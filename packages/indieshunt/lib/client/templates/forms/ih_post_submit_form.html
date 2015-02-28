@@ -75,10 +75,11 @@
   {{/if}}
 
   <div class="form-actions">
-    {{#if isPostEdit}}
-      <a class="delete-link" href="/posts/deleted">Delete</a>
-    {{/if}}
     <input type="submit" class="btn btn-primary" value="Submit" />
   </div>
-
+  {{#if isAdmin}}
+  <div class="grid grid-module">
+    <a class="delete-link" href="/">Delete Post</a>
+  </div>
+  {{/if}}
 </template>

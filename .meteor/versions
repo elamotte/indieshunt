@@ -62,7 +62,7 @@ less@1.0.12
 livedata@1.0.12
 localstorage@1.0.2
 logging@1.0.6
-matb33:collection-hooks@0.7.9
+matb33:collection-hooks@0.7.11
 meteor@1.1.4
 meteor-platform@1.2.1
 meteorhacks:async@1.0.0
@@ -110,7 +110,7 @@ spiderable@1.0.6
 srp@1.0.2
 standard-app-packages@1.0.4
 stylus@1.0.6
-tap:i18n@1.4.0
+tap:i18n@1.4.1
 telescope-api@0.0.0
 telescope-base@0.0.0
 telescope-daily@0.0.0
