@@ -2,7 +2,7 @@
   <h2>Edit Post</h2>
 
   <div class="grid grid-module">
-    {{#autoForm collection="Posts" doc=post id="editPostForm" type="method" meteormethod="editPost"}}
+    {{#autoForm collection="Posts" doc=post id="editPostForm" type="method-update" meteormethod="editPost"}}
       {{> ih_post_submit_form}}
     {{/autoForm}}
   </div>
