@@ -24,8 +24,12 @@ postMeta = [
     order: 10
  },
  {
+    template: 'postAdmin',
+    order: 20
+ },
+ {
      template: 'postCategories',
-     order: 20
+     order: 30
  }
 ];
 
