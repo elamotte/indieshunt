@@ -61,11 +61,13 @@ buildCampaign = function (postsArray) {
   // 3. wrap digest HTML in email wrapper template
   var emailHTML = buildEmailTemplate(digestHTML);
 
-  return {
+  var campaign = {
     postIds: _.pluck(postsArray, '_id'),
     subject: trimWords(subject, 15),
     html: emailHTML
   }
+
+  return campaign
 }
 
 scheduleNextCampaign = function (isTest) {
@@ -80,6 +82,10 @@ scheduleNextCampaign = function (isTest) {
 }
 
 Meteor.methods({
+  sendCampaign: function () {
+    if(isAdminById(this.userId))
+      return scheduleNextCampaign(false);
+  },
   testCampaign: function () {
     if(isAdminById(this.userId))
       return scheduleNextCampaign(true);
