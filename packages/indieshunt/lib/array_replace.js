@@ -1,18 +1,18 @@
-primaryNav = [
-{
-    template: 'categoriesMenu',
-    order: 0
-},
-{
-    template: 'adminMenu',
-    order: 20
-},
-{
-    template: 'search',
-    order: 100
-}
-];
-
+// primaryNav = [
+// {
+//     template: 'categoriesMenu',
+//     order: 0
+// },
+// {
+//     template: 'adminMenu',
+//     order: 20
+// },
+// {
+//     template: 'search',
+//     order: 100
+// }
+// ];
+//
 
 postMeta = [
  {
